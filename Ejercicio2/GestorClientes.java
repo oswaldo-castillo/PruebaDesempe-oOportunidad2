@@ -4,8 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestorClientes {
+    // ERROR: La declaracion de variables debe de ir antes
+    // ERROR: La variable cliente no cuenta con un valor anterior
     public static void eliminarInactivos(List<String> clientes, String inactivo) {
         for (String cliente : clientes) {
+            // ERROR: Como inactivo no tiene un valor string para comparar, el if nunca se activa
+        // por lo tanto, no regresa nada
             if (cliente == inactivo) {
                 clientes.remove(cliente);
             }

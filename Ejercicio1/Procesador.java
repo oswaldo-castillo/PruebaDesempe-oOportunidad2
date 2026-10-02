@@ -10,10 +10,12 @@ public class Procesador {
         // ERROR: El while esta abierto y nunca cierra
         while (i < datos.length) {
             suma += datos[i];
-            // ERROR: el continue hace que el sistema siga ejecutando el mismo numero negativo
+            // ERROR: La condicion para los negativos debe hacer que se omita el numero negativo, pero no lo hace y la suma se sigue realizando
             if (datos[i] < 0) {
                 // ERROR: El x: no debe estar ahi
                 System.out.println("Valor negativo encontrado, se omite");
+                // ERROR: el continue hace que el sistema siga ejecutando el mismo numero negativo
+                continue;
             }
             // ERROR: Se puede declarar el i++ dentro del while
             i++;
