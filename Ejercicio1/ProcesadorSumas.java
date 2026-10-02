@@ -24,12 +24,13 @@ public class ProcesadorSumas {
                 sumaPositivos += datos[i];
             } 
         }
-        /**
-        * @return la suma total de los numeros positivos procesados
-        */
+       
         return sumaPositivos;
     }
-
+        /**
+        * @return sumaPositivos la suma total de los numeros positivos procesados
+        */
+       
     public static void main(String[] args) {
         int[] datos = {5, 10, -3, 8};
         int resultado = sumarNumerosPositivos(datos);
